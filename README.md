@@ -36,8 +36,7 @@ A review of the results of the T-test for the suspension coils for Lot 2 shows t
 A review of the results of the T-test for the suspension coils for Lot 3 shows that they are slightly statistically different from the population mean, and the p-value is just low enough (0.0417) for us to reject the null hypothesis. This lot may be need to be discarded, or at least more closely evaluated.
 
 ## Study Design: MechaCar vs Competition
-
-With gas-prices skyrocketing to $5 per gallon and no end in sight, understandably, consumers who commute from outside-city limits are concerned about how much mileage their vehicles are getting per gallon. Many are looking to upgrade their vehicles to something more eco-friendly, that also saves them a few bucks each time they fill up. Before making the investment, MechaCar wants to provide its potential customers with the statistics on how the company’s vehicles highway fuel efficiency fares against competitor’s
+With gas-prices skyrocketing to $5 per gallon and no end in sight, understandably, consumers who commute from outside-city limits are concerned about how much mileage their vehicles are getting per gallon. Many are looking to upgrade their vehicles to something more eco-friendly, that also saves them a few bucks each time they fill up. With MechaCar, AutosRUs wants to provide consumer's with a vehicle whose fuel efficency is competitive against other auto manufacturers' in the same vehicle class.
 
 ### Metrics to Test
 To perform our study, we will need to evaluate gas prices (current and historical) as well as combined fuel economy or mpg.  Additionally, we should compare a vehicle’s cylinder numbers to fuel efficiency performance. 
@@ -50,4 +49,4 @@ H0: MechaCar prototypes' average fuel efficiency is not like competitor's vehicl
 For this study, we would use multiple linear regression because it tests how much variance in the dependent variable is accounted for in a linear combination of independent variables. 
 
 ### Data Needed
-To analyze fuel economy, the city and highway fuel economies must first be combined into one variable (mpg). According to the EPA, combined fuel economy is an average calculated by weighing the City value by 55% and the Highway value by 45%. We will need to gather these metrics for each manufacturing company included in our comparative study. Additionally, we will need to group these by cylinder-size. 
+To analyze fuel economy, the city and highway fuel economies must first be combined into one variable (mpg). According to the EPA, combined fuel economy is an average calculated by weighing the City value by 55% and the Highway value by 45%. We will need to gather these metrics for each manufacturing company included in our comparative study. Additionally, we will need to group these by cylinder-size to assert we are testing from the correct sample groups. 
