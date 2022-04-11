@@ -50,13 +50,22 @@ The design specifications for the MechaCar suspension coils dictate that the var
 </p>
 Assuming our significance level was the common 0.05 percent, at 0.06028, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 
-![lot1.png](https://github.com/nedflowers/MechaCar_Statistical_Analysis/blob/main/images/lot1.png)
+#### Lot 1
+<p align="left">
+  <img width="900" height="420" src="https://github.com/nedflowers/MechaCar_Statistical_Analysis/blob/main/images/lot1.png">
+</p>
 A review of the results of the T-test for the suspension coils for Lot 1 shows that the mean is not statistically different from the population's, and the p-value is 1, not low enough for us to reject the null hypothesis.
 
-![lot2]
+#### Lot 2
+<p align="left">
+  <img width="900" height="420" src="https://github.com/nedflowers/MechaCar_Statistical_Analysis/blob/main/images/lot2.png">
+</p>
 A review of the results of the T-test for the suspension coils for Lot 2 shows that the mean is not statistically different from the population's, and the p-value is 0.6072, not low enough for us to reject the null hypothesis.
 
-![lot3]
+#### Lot 3
+<p align="left">
+  <img width="900" height="420" src="https://github.com/nedflowers/MechaCar_Statistical_Analysis/blob/main/images/lot3.png">
+</p>
 A review of the results of the T-test for the suspension coils for Lot 3 shows that they are slightly statistically different from the population mean, and the p-value is just low enough (0.0417) for us to reject the null hypothesis. This lot may be need to be discarded, or at least more closely evaluated.
 
 ## Study Design: MechaCar vs Competition
