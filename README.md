@@ -1,1 +1,53 @@
 # MechaCar_Statistical_Analysis
+
+<SUMMARY>
+
+
+## Linear Regression to Predict MPG
+
+![THIS IS AN IMAGE]
+
+- In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, vehicle weight and horsepower (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model.
+- According to the results, the the multi linear module is:
+'''
+mpg = 6.27 * vehicle_length + 1.25e-3 * vehicle_weigth + 6.88e-2 * spoiler_angle -3.41 * AWD + 3.55 * ground_clearance - 1.04e+2
+
+'''
+Therefore, the slope is not zero.
+- R-squared is 0.71 so 71% of the variations in mpg can be explained by changes in the vehicle length, the vehicle weight, the spoiler angle, the drivetrain and the ground clearance. We can consider the variables as hvaing a strong correlation in our model.
+
+## Summary Statistics on Suspension Coils
+![THIS IS AN IMAGE]
+![THIS IS AN IMAGE]
+
+- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Globally, the PSI is within our scope for all manufactures at 62.3 psi. On the lot level, Lot 1 and Lot 2 are within specs with variances of 0.98 and 7.5 psi, respectively. On the other hand, Lot 3 is out of our scope with a variance of 170.3 psi.
+
+## T-Tests on Suspension Coils
+![lot_summary]
+Assuming our significance level was the common 0.05 percent, at 0.06028, our p-value is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+![lot1]
+A review of the results of the T-test for the suspension coils for Lot 1 shows that the mean is not statistically different from the population's, and the p-value is 1, not low enough for us to reject the null hypothesis.
+
+![lot2]
+A review of the results of the T-test for the suspension coils for Lot 2 shows that the mean is not statistically different from the population's, and the p-value is 0.6072, not low enough for us to reject the null hypothesis.
+
+![lot3]
+A review of the results of the T-test for the suspension coils for Lot 3 shows that they are slightly statistically different from the population mean, and the p-value is just low enough (0.0417) for us to reject the null hypothesis. This lot may be need to be discarded, or at least more closely evaluated.
+
+## Study Design: MechaCar vs Competition
+
+With gas-prices skyrocketing to $5 per gallon and no end in sight, understandably, consumers who commute from outside-city limits are concerned about how much mileage their vehicles are getting per gallon. Many are looking to upgrade their vehicles to something more eco-friendly, that also saves them a few bucks each time they fill up. Before making the investment, MechaCar wants to provide its potential customers with the statistics on how the company’s vehicles highway fuel efficiency fares against competitor’s
+
+### Metrics to Test
+To perform our study, we will need to evaluate gas prices (current and historical) as well as combined fuel economy or mpg.  Additionally, we should compare a vehicle’s cylinder numbers to fuel efficiency performance. 
+
+### Null and Alternate Hypothesis
+H0: MechaCar prototypes' average fuel efficiency is not like competitor's vehicles in the same vehicle class.
+ Ha: MechaCar prototypes' average fuel efficiency is statistically above or below that of competitor vehicles.
+
+### Statistical Test Used
+For this study, we would use multiple linear regression because it tests how much variance in the dependent variable is accounted for in a linear combination of independent variables. 
+
+### Data Needed
+To analyze fuel economy, the city and highway fuel economies must first be combined into one variable (mpg). According to the EPA, combined fuel economy is an average calculated by weighing the City value by 55% and the Highway value by 45%. We will need to gather these metrics for each manufacturing company included in our comparative study. Additionally, we will need to group these by cylinder-size. 
