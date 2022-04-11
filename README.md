@@ -1,6 +1,15 @@
 # MechaCar_Statistical_Analysis
 
-<SUMMARY>
+## Project Overview
+
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+
+In this challenge, you’ll help Jeremy and the data analytics team do the following:
+
+- Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
+- Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
+- Run t-tests to determine if the manufacturing lots are statistically different from the mean population
+- Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll - write a summary interpretation of the findings.
 
 
 ## Linear Regression to Predict MPG
@@ -9,11 +18,11 @@
 
 - In the summary output, each Pr(>|t|) value represents the probability that each coefficient contributes a random amount of variance to the linear model. According to our results, vehicle weight and horsepower (as well as intercept) are statistically unlikely to provide random amounts of variance to the linear model.
 - According to the results, the the multi linear module is:
-'''
+```
 mpg = 6.27 * vehicle_length + 1.25e-3 * vehicle_weigth + 6.88e-2 * spoiler_angle -3.41 * AWD + 3.55 * ground_clearance - 1.04e+2
 
-'''
-Therefore, the slope is not zero.
+```
+  Therefore, the slope is not zero.
 - R-squared is 0.71 so 71% of the variations in mpg can be explained by changes in the vehicle length, the vehicle weight, the spoiler angle, the drivetrain and the ground clearance. We can consider the variables as hvaing a strong correlation in our model.
 
 ## Summary Statistics on Suspension Coils
